@@ -19,11 +19,11 @@ This field accepts any command line configuration parameters defined on the [Usa
 ![image](https://cloud.githubusercontent.com/assets/308007/17201420/3dc7d5dc-545c-11e6-97fb-37a08c706747.png)
 
 **But what if my project has already been deployed?**
-  - Click `Settings` > `Reveal Config Vars`
-  - At the bottom of the list, add a new "KEY" titled `EXTRA_ARGS`
-  - The "VALUE" field is where you will add your configuration arguments:
-  - *EX: Use 10 threads, Exclude Gyms, Exclude PokéStops:* `-t 10 -ng -nk`
-  - ![image](https://cloud.githubusercontent.com/assets/308007/17201196/5700ac2e-545a-11e6-8ae8-dd2f3b602933.png)
+  Click `Settings` > `Reveal Config Vars`
+  At the bottom of the list, add a new "KEY" titled `EXTRA_ARGS`
+  The "VALUE" field is where you will add your configuration arguments:
+  *EX: Use 10 threads, Exclude Gyms, Exclude PokéStops:* `-t 10 -ng -nk`
+  ![image](https://cloud.githubusercontent.com/assets/308007/17201196/5700ac2e-545a-11e6-8ae8-dd2f3b602933.png)
 
 ## Manually deploying to Heroku
 
