@@ -4,13 +4,11 @@
 
 This project supports deploying a new app to Heroku using the "Deploy to Heroku" button.  Clicking this button will walk you through setting up the project on your Heroku account, allowing you to set the various configuration values required to make the project run.
 
-### Making use of the EXTRA_ARGS when setting up a Heroku app
-
-When setting up a new Heroku app, you are provided with a template to add your API and login information to your app:
-
 ![image](https://cloud.githubusercontent.com/assets/308007/17201401/06dece7c-545c-11e6-9918-649ed7395638.png)
 
-To add configuration parameters not present in those boxes, you'll want to add your config in the `EXTRA_ARGS` field.
+### Making use of the EXTRA_ARGS when setting up a Heroku app
+
+To enable non-standard configuration options, you'll want to utilize the `EXTRA_ARGS` field.
 
 This field accepts any command line configuration parameters defined on the [Usage](Usage.md) page:
 
@@ -19,11 +17,11 @@ This field accepts any command line configuration parameters defined on the [Usa
 ![image](https://cloud.githubusercontent.com/assets/308007/17201420/3dc7d5dc-545c-11e6-97fb-37a08c706747.png)
 
 **But what if my project has already been deployed?**
-  Click `Settings` > `Reveal Config Vars`
-  At the bottom of the list, add a new "KEY" titled `EXTRA_ARGS`
-  The "VALUE" field is where you will add your configuration arguments:
-  *EX: Use 10 threads, Exclude Gyms, Exclude PokéStops:* `-t 10 -ng -nk`
-  ![image](https://cloud.githubusercontent.com/assets/308007/17201196/5700ac2e-545a-11e6-8ae8-dd2f3b602933.png)
+  * Click `Settings` > `Reveal Config Vars`
+  * At the bottom of the list, add a new "KEY" titled `EXTRA_ARGS`
+  * The "VALUE" field is where you will add your configuration arguments:
+  * *EX: Use 10 threads, Exclude Gyms, Exclude PokéStops:* `-t 10 -ng -nk`
+  * ![image](https://cloud.githubusercontent.com/assets/308007/17201196/5700ac2e-545a-11e6-8ae8-dd2f3b602933.png)
 
 ## Manually deploying to Heroku
 
